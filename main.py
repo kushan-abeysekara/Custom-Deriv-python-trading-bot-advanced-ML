@@ -3,6 +3,8 @@
 # It manages real-time trading, risk, and launches the analytical engine
 # (model_trainer.py) in a separate process.
 
+#To maximize it's potential and execution speeds, please run it on google colab
+
 import asyncio
 import websockets
 import json
@@ -67,8 +69,10 @@ logging.basicConfig(level=logging.INFO,
                     ])
 
 # --- CONFIG ---
-API_TOKEN = "YUa7FW6khNWqwyW"  
-SYMBOL = "1HZ10V"
+API_TOKEN = "YUa7FW6khqwyW"  # Relace with your actual Api token. Get yours at https://api.deriv.com/
+SYMBOL = "1HZ10V" # Replce with your desired symbol. On deriv trader interface, check the url for clues eg R_100 etc
+
+# Feel free to adjust the constants below to your liking. Note, only use this with demo accounts only. This bot does not guarantee profits in any case. Feel free to optimize the bot to your best liking.
 DAILY_LOSS_LIMIT = 3.00
 DAILY_PROFIT_TARGET = 5.00
 MIN_CONFIDENCE_THRESHOLD = 0.51
@@ -380,4 +384,5 @@ def start_model_trainer_process(queue: Queue):
         logging.critical(f"Error in model_trainer process: {e}")
 
 if __name__ == "__main__":
+
     asyncio.run(run_bot())
