@@ -1,4 +1,5 @@
 The Analytical Engine: A Tick-Based Trading Bot 🤖
+
 This project consists of a high-frequency trading bot designed to predict the last digit of a synthetic index's price tick. It uses a dual-process architecture to separate real-time trading from intensive model training, ensuring optimal performance and responsiveness.
 
 ✨ Features
