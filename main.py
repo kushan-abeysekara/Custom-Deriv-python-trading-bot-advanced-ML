@@ -69,7 +69,7 @@ logging.basicConfig(level=logging.INFO,
                     ])
 
 # --- CONFIG ---
-API_TOKEN = "YUa7FW6khqwyW"  # Relace with your actual Api token. Get yours at https://api.deriv.com/
+API_TOKEN = "6iGI0fIFqDzZsN0"  # Relace with your actual Api token. Get yours at https://api.deriv.com/
 SYMBOL = "1HZ10V" # Replce with your desired symbol. On deriv trader interface, check the url for clues eg R_100 etc
 
 # Feel free to adjust the constants below to your liking. Note, only use this with demo accounts only. This bot does not guarantee profits in any case. Feel free to optimize the bot to your best liking.
